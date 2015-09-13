@@ -159,6 +159,7 @@
             this.btnPreview.TabIndex = 29;
             this.btnPreview.Text = "Ver Preview";
             this.btnPreview.UseVisualStyleBackColor = true;
+            this.btnPreview.Visible = false;
             this.btnPreview.Click += new System.EventHandler(this.btnPreview_Click);
             // 
             // txtNeutral
@@ -202,9 +203,9 @@
             // 
             // btnTimeLine
             // 
-            this.btnTimeLine.Location = new System.Drawing.Point(698, 49);
+            this.btnTimeLine.Location = new System.Drawing.Point(670, 49);
             this.btnTimeLine.Name = "btnTimeLine";
-            this.btnTimeLine.Size = new System.Drawing.Size(201, 35);
+            this.btnTimeLine.Size = new System.Drawing.Size(229, 35);
             this.btnTimeLine.TabIndex = 25;
             this.btnTimeLine.Text = "Configurar Narrativas >";
             this.btnTimeLine.UseVisualStyleBackColor = true;

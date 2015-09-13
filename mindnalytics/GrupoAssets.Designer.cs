@@ -39,12 +39,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.tablaAssets = new System.Windows.Forms.DataGridView();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numZOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaAssets)).BeginInit();
@@ -78,6 +78,7 @@
             this.btnDeleteGroup.TabIndex = 38;
             this.btnDeleteGroup.Text = "Eliminar Grupo de Assets";
             this.btnDeleteGroup.UseVisualStyleBackColor = true;
+            this.btnDeleteGroup.Visible = false;
             this.btnDeleteGroup.Click += new System.EventHandler(this.btnDeleteGroup_Click);
             // 
             // btnDwnAsset
@@ -181,6 +182,10 @@
             this.tablaAssets.Size = new System.Drawing.Size(676, 318);
             this.tablaAssets.TabIndex = 27;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Nombre
             // 
             this.Nombre.HeaderText = "Nombre";
@@ -191,18 +196,21 @@
             // 
             this.X.HeaderText = "X";
             this.X.Name = "X";
+            this.X.Visible = false;
             this.X.Width = 40;
             // 
             // Y
             // 
             this.Y.HeaderText = "Y";
             this.Y.Name = "Y";
+            this.Y.Visible = false;
             this.Y.Width = 40;
             // 
             // Time
             // 
             this.Time.HeaderText = "Time (S)";
             this.Time.Name = "Time";
+            this.Time.Visible = false;
             // 
             // Path
             // 
@@ -210,10 +218,6 @@
             this.Path.Name = "Path";
             this.Path.ReadOnly = true;
             this.Path.Width = 800;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // GrupoAssets
             // 

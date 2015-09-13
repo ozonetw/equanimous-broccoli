@@ -12,7 +12,7 @@ namespace mindnalytics
     {
         public static EmoEngine engine = EmoEngine.Instance;
         //static EmoState es;
-        public static Single scoreMedidation, scoreExcitement, scoreEngage;   //Scores despues de la correcion algoritmica de emotiv
+        public static Single scoreMedidation, scoreExcitement, scoreEngage , scoreFrustation;   //Scores despues de la correcion algoritmica de emotiv
         public static System.Timers.Timer aTimer = new System.Timers.Timer();
 
 
@@ -50,8 +50,11 @@ namespace mindnalytics
         {
             EmoState es = e.emoState;
             scoreMedidation = es.AffectivGetMeditationScore();
+            
             //Console.WriteLine(scoreMedidation);
             scoreExcitement = es.AffectivGetExcitementShortTermScore();
+            scoreFrustation = es.AffectivGetFrustrationScore();
+            
             //Console.WriteLine(scoreExcitement);
             scoreEngage = es.AffectivGetEngagementBoredomScore();
             //Console.WriteLine("meditation: " + es.AffectivGetMeditationScore());

@@ -25,6 +25,7 @@ namespace mindnalytics
         public List<Double> ListEngage = new List<Double>();
         public List<Double> ListExcitement = new List<Double>();
         public List<Double> ListMeditation = new List<Double>();
+        public List<Double> ListFrustation = new List<Double>();
 
         bool registro = false;
         Timer MyTimer = new Timer();
@@ -199,6 +200,7 @@ namespace mindnalytics
             ListEngage.Add(ReaderEmotiv.scoreEngage);
             ListExcitement.Add(ReaderEmotiv.scoreExcitement);
             ListMeditation.Add(ReaderEmotiv.scoreMedidation);
+            ListFrustation.Add(ReaderEmotiv.scoreFrustation);
 
             //Console.WriteLine(ListEngage.Average());
             //ListEngage.ForEach(i => Console.Write("{0}\t", i));
@@ -230,6 +232,7 @@ namespace mindnalytics
             ListEngage.Clear();
             ListExcitement.Clear();
             ListMeditation.Clear();
+            ListFrustation.Clear();
 
         }
 
