@@ -73,6 +73,18 @@
     <Compile Include="Estudio.cs" />
     <Compile Include="ExcelManipulator.cs" />
     <Compile Include="Experimento.cs" />
+    <Compile Include="GrupoRandom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GrupoRandom.Designer.cs">
+      <DependentUpon>GrupoRandom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GruposRandom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GruposRandom.Designer.cs">
+      <DependentUpon>GruposRandom.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImagenNarrativa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CargarNarrativas.resx">
       <DependentUpon>CargarNarrativas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrupoRandom.resx">
+      <DependentUpon>GrupoRandom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GruposRandom.resx">
+      <DependentUpon>GruposRandom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImagenNarrativa.resx">
       <DependentUpon>ImagenNarrativa.cs</DependentUpon>

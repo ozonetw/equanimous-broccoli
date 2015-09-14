@@ -156,26 +156,42 @@ namespace mindnalytics
                 stopWatch.Stop();
                 //stopWatch.Restart();
                 stopWatch.Reset();
-                List<int[]> scores = QR.exitementScore(ListExcitement, numSamples);
+                List<int[]> scoresEx = QR.exitementScore(ListExcitement, numSamples);
+                List<int[]> scoresEn = QR.exitementScore(ListEngage, numSamples);
+                List<int[]> scoresMe = QR.exitementScore(ListMeditation, numSamples);
+                List<int[]> scoresFr = QR.exitementScore(ListFrustation, numSamples);
 
                 ObjetoAnalisis objAn = new ObjetoAnalisis(
                                         currentAsset.nombre,
                                         sujetoPrueba,
                                         grupo.nombre,
                                         currentAsset.path,
-                                        getScoresBonitos(scores)[0],
-                                        getScoresBonitos(scores)[1],
-                                        getScoresBonitos(scores)[2],
+                                        getScoresBonitos(scoresEx)[0],
+                                        getScoresBonitos(scoresEx)[1],
+                                        getScoresBonitos(scoresEx)[2],
+                                        getScoresBonitos(scoresEn)[0],
+                                        getScoresBonitos(scoresEn)[1],
+                                        getScoresBonitos(scoresEn)[2],
+
+                                        getScoresBonitos(scoresMe)[0],
+                                        getScoresBonitos(scoresMe)[1],
+                                        getScoresBonitos(scoresMe)[2],
+
+                                        getScoresBonitos(scoresFr)[0],
+                                        getScoresBonitos(scoresFr)[1],
+                                        getScoresBonitos(scoresFr)[2],
                                         ListEngage,
                                         ListExcitement,
-                                        ListMeditation
+                                        ListMeditation,
+                                        ListFrustation
+
 
                     );
                 objAn.Save(estudioAbierto.FolderName, estudioAbierto.ProjectName + "-Results");
                 //int scoreQRT = QR.exitementScore(ListExcitement, numSamples);
                 //Console.WriteLine("QRScore: "+scoreQRT);
                 Console.WriteLine("Scores");
-                Console.WriteLine(getScoresBonitos(scores));
+                Console.WriteLine(getScoresBonitos(scoresEx));
                 //scores.ForEach(i => Console.Write("{0},\t", i));
                 /*
                 OAS = new ObjetoAnalisis(

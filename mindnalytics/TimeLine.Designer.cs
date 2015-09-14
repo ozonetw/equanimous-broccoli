@@ -70,11 +70,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(342, 64);
+            this.label3.Location = new System.Drawing.Point(322, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 16);
+            this.label3.Size = new System.Drawing.Size(72, 16);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Sequencia";
+            this.label3.Text = "Secuencia";
             // 
             // tablaTimeline
             // 
@@ -99,6 +99,7 @@
             this.Numero.HeaderText = "#";
             this.Numero.Name = "Numero";
             this.Numero.ReadOnly = true;
+            this.Numero.Visible = false;
             this.Numero.Width = 40;
             // 
             // Nombre
@@ -192,7 +193,7 @@
             // 
             // Archivo
             // 
-            this.Archivo.Text = "Archivo";
+            this.Archivo.Text = "Nombre";
             this.Archivo.Width = 220;
             // 
             // listView2
@@ -211,7 +212,7 @@
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Archivo";
+            this.columnHeader1.Text = "Nombre";
             this.columnHeader1.Width = 700;
             // 
             // TimeLine
@@ -252,9 +253,6 @@
         private System.Windows.Forms.Button btnUpAsset;
         private System.Windows.Forms.Button btnRmvAsset;
         private System.Windows.Forms.Button btnAddAsset;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         private System.Windows.Forms.Button btnTimeLine;
         private System.Windows.Forms.Button button1;
         public System.Windows.Forms.ListView listView1;
@@ -262,5 +260,8 @@
         public System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
     }
 }

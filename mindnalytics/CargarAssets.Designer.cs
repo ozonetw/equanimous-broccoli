@@ -149,6 +149,7 @@
             this.btnCargarAssets.TabIndex = 30;
             this.btnCargarAssets.Text = "Cargar Grupo de Assets";
             this.btnCargarAssets.UseVisualStyleBackColor = true;
+            this.btnCargarAssets.Visible = false;
             this.btnCargarAssets.Click += new System.EventHandler(this.btnCargarAssets_Click);
             // 
             // btnPreview

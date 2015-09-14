@@ -34,14 +34,15 @@
             this.btnRmvAsset = new System.Windows.Forms.Button();
             this.btnAddAsset = new System.Windows.Forms.Button();
             this.tablaNarrativas = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Imagen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.boton = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.btnTimeLine = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Imagen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.boton = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaNarrativas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,31 +117,6 @@
             this.tablaNarrativas.TabIndex = 36;
             this.tablaNarrativas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaAssets_CellClick);
             // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 140;
-            // 
-            // Imagen
-            // 
-            this.Imagen.HeaderText = "Imagen";
-            this.Imagen.Name = "Imagen";
-            // 
-            // boton
-            // 
-            this.boton.HeaderText = "...";
-            this.boton.Name = "boton";
-            this.boton.Text = "...";
-            this.boton.Width = 30;
-            // 
-            // Path
-            // 
-            this.Path.HeaderText = "Path";
-            this.Path.Name = "Path";
-            this.Path.ReadOnly = true;
-            this.Path.Width = 800;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(307, 12);
@@ -153,9 +129,9 @@
             // 
             // btnTimeLine
             // 
-            this.btnTimeLine.Location = new System.Drawing.Point(766, 12);
+            this.btnTimeLine.Location = new System.Drawing.Point(826, 12);
             this.btnTimeLine.Name = "btnTimeLine";
-            this.btnTimeLine.Size = new System.Drawing.Size(242, 35);
+            this.btnTimeLine.Size = new System.Drawing.Size(182, 35);
             this.btnTimeLine.TabIndex = 45;
             this.btnTimeLine.Text = "Configurar Timeline >";
             this.btnTimeLine.UseVisualStyleBackColor = true;
@@ -169,11 +145,48 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Width = 140;
+            // 
+            // Imagen
+            // 
+            this.Imagen.HeaderText = "Imagen";
+            this.Imagen.Name = "Imagen";
+            this.Imagen.Visible = false;
+            // 
+            // boton
+            // 
+            this.boton.HeaderText = "...";
+            this.boton.Name = "boton";
+            this.boton.Text = "...";
+            this.boton.Visible = false;
+            this.boton.Width = 30;
+            // 
+            // Path
+            // 
+            this.Path.HeaderText = "Path";
+            this.Path.Name = "Path";
+            this.Path.ReadOnly = true;
+            this.Path.Width = 800;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(639, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(172, 36);
+            this.button2.TabIndex = 46;
+            this.button2.Text = "Configurar Random >";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // CargarNarrativas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 466);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnTimeLine);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnRmvAsset);
@@ -201,11 +214,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnTimeLine;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Imagen;
         private System.Windows.Forms.DataGridViewButtonColumn boton;
         private System.Windows.Forms.DataGridViewTextBoxColumn Path;
-        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.Button button2;
 
     }
 }

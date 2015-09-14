@@ -39,12 +39,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.tablaAssets = new System.Windows.Forms.DataGridView();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Path = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numZOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablaAssets)).BeginInit();
@@ -133,6 +133,7 @@
             this.numZOrder.Size = new System.Drawing.Size(77, 22);
             this.numZOrder.TabIndex = 33;
             this.numZOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numZOrder.Visible = false;
             // 
             // label3
             // 
@@ -143,11 +144,12 @@
             this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 32;
             this.label3.Text = "Orden Z :";
+            this.label3.Visible = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 27);
+            this.label1.Location = new System.Drawing.Point(11, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 16);
@@ -156,10 +158,10 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(132, 27);
+            this.txtName.Location = new System.Drawing.Point(87, 29);
             this.txtName.Margin = new System.Windows.Forms.Padding(5);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(440, 22);
+            this.txtName.Size = new System.Drawing.Size(503, 22);
             this.txtName.TabIndex = 28;
             // 
             // tablaAssets
@@ -181,10 +183,6 @@
             this.tablaAssets.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tablaAssets.Size = new System.Drawing.Size(676, 318);
             this.tablaAssets.TabIndex = 27;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Nombre
             // 
@@ -218,6 +216,10 @@
             this.Path.Name = "Path";
             this.Path.ReadOnly = true;
             this.Path.Width = 800;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // GrupoAssets
             // 

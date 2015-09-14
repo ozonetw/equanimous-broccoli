@@ -123,6 +123,7 @@
             this.Numero.HeaderText = "#";
             this.Numero.Name = "Numero";
             this.Numero.ReadOnly = true;
+            this.Numero.Visible = false;
             this.Numero.Width = 40;
             // 
             // Nombre

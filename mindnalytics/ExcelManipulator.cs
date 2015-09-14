@@ -25,8 +25,27 @@ namespace mindnalytics
         public static void saveOA(ObjetoAnalisis oa, String FilePath, String FileName)
         {
             var csv = new StringBuilder();
-            csv.Append("" + oa.nombreExperimento + " , " + oa.nombreOA + " , " + oa.grupo + " , " + oa.path
-                + " , " + oa.qrp + " , " + oa.qrn + " , " + oa.qrm + Environment.NewLine);
+            csv.Append("" + oa.nombreExperimento + " , " 
+                          + oa.nombreOA + " , " 
+                          + oa.grupo + " , " 
+                          + oa.path + " , " 
+                          + oa.qrp + " , " 
+                          + oa.qrn + " , "
+                          + oa.qrm + " , "
+
+                          + oa.qrpEn + " , "
+                          + oa.qrnEn + " , "
+                          + oa.qrmEn + " , "
+
+                          + oa.qrpMe + " , "
+                          + oa.qrnMe + " , "
+                          + oa.qrmMe + " , "
+
+                          + oa.qrpFr + " , "
+                          + oa.qrnFr + " , "
+                          + oa.qrmFr 
+
+                          + Environment.NewLine);
 
             File.AppendAllText(FilePath + "//" + FileName + ".csv", csv.ToString());
 
@@ -43,6 +62,8 @@ namespace mindnalytics
                 FilePath + "//" + FileName + "raw_excitement.csv");
             saveRaw(oa.nombreOA, oa.nombreExperimento, oa.scoreMeditation,
                FilePath + "//" + FileName + "raw_meditation.csv");
+            saveRaw(oa.nombreOA, oa.nombreExperimento, oa.scoreFrustration,
+               FilePath + "//" + FileName + "raw_frustration.csv");
             
         }
 
@@ -60,6 +81,9 @@ namespace mindnalytics
             File.AppendAllText(file, csv.ToString());
         }
 
+
+        //Leer archivo de excel 
+        //NOTA: ya no jalara con el nuevo objeto analisis
         public static List<ObjetoAnalisis> readOA(String FilePath, String FileName)
         {
             List<ObjetoAnalisis> listOA = new List<ObjetoAnalisis>();
